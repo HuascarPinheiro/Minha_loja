@@ -127,6 +127,25 @@ nav a:hover {
     background: #218838;
 }  
 
+/* Mobile */
+@media screen and (max-width: 767px) {
+    
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1, header h2 {
+        font-size: 1.2rem; 
+        margin-bottom: 0;
+    }
+
+    nav {
+        margin-top: 0; 
+    }
+}
+
 /* iPad */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     
