@@ -126,3 +126,33 @@ nav a:hover {
 .produto button:hover {
     background: #218838;
 }  
+
+/* iPad */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre .imagem-loja,
+    .sobre .texto-loja {
+        flex: 1 1 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sobre img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    }
+
+    .sobre .texto-loja {
+        margin-top: 1rem;
+    }
+
+    .lista-produtos {
+        grid-template-columns: repeat(2, 1fr); /* Adicionado para forçar 2 colunas no iPad */
+    }
+}
