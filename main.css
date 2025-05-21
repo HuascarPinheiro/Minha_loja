@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header, footer {
+    background-color: rgb(15, 184, 127);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Sobre nos */
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.sobre h2 {
+    color: rgb(15, 184, 127);
+    border-bottom: 1px solid rgb(15, 184, 127);
+    margin-bottom: 1rem;
+}
+
+.sobre .imagem-loja,
+.sobre .texto-loja {
+    flex: 1 1 300px;
+    max-width: 400px;
+    }
+
+.sobre img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.sobre .texto-loja {
+    display: flex;
+    flex-direction: column;  /* direçao do texto */ 
+    justify-content: center; /* ficar no centro do container */
+}
+
+
+/* Produtos */
+
+.produtos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.produtos h2 {
+    padding: 0 2rem;
+    display: flex;
+    color: rgb(15, 184, 127);
+    border-bottom: 1px solid rgb(15, 184, 127);
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* "auto-fit" = máximo de colunas possíveis, de acordo com o espaço disponível*/
+    gap: 2rem;                                                   /* minmax() define um tamanho mínimo e máximo para as colunas. */
+    margin-top: 2rem;                                            /* 220px é o tamanho mínimo que uma coluna pode ter. */
+    /*                                                              1fr é o tamanho máximo: quer dizer que a coluna pode crescer para ocupar espaço proporcionalmente. */
+}
+
+.produto {
+    background-color: rgb(8, 119, 82);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.produto button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4x;
+    cursor: pointer;
+}   
+
+.produto button:hover {
+    background: #218838;
+}  
